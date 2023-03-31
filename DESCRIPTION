@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "ailich@usf.edu",
            comment = c(ORCID = "0000-0003-1758-8499"))
-Description: Various functions for C-BASS Data including merging c-vision annotation, binning fish counts, connecting to the database, and getting data from research cruises into a more useable format.
+Description: Various functions for C-BASS Data including merging c-vision annotation files, binning fish counts, connecting to the C-BASS database, and getting data from research cruises into a more useable format.
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
