@@ -1,0 +1,25 @@
+Package: CbassTools
+Title: Functions for C-BASS Data
+Version: 0.1
+Authors@R: 
+  person(given = "Alexander",
+           family = "Ilich",
+           role = c("aut", "cre"),
+           email = "ailich@usf.edu",
+           comment = c(ORCID = "0000-0003-1758-8499"))
+Description: Various functions for C-BASS Data including merging c-vision annotation, binning fish counts, connecting to the database, and getting data from research cruises into a more useable format.
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+BugReports: https://github.com/ailich/CbassTools/issues
+Imports: 
+    stats,
+    dplyr,
+    tidyr,
+    readr,
+    stringr,
+    lubridate,
+    ggplot2,
+    writexl,
+    RMariaDB
+URL:https://github.com/ailich/CbassTools
