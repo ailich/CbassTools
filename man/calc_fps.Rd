@@ -16,7 +16,7 @@ calc_fps(
 
 \item{u_second}{vector of microseconds (Alternatively microseconds can already be in the timestamp) (must be same length as cam_filepath)}
 
-\item{cam_filepath}{vector of filepaths from balckfly camera (must be same length as cam_timestamp)}
+\item{cam_filepath}{vector of filepaths from blackfly camera (must be same length as cam_timestamp)}
 
 \item{check}{logical indicating whether or not to check if camera was reset}
 }

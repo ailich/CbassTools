@@ -1,6 +1,6 @@
-#' Check if any C-Vision csv's are missing
+#' Check if any C-Vision csv's are missing or duplicated
 #'
-#' Check if any C-Vision csv's are missing
+#' Check if any C-Vision csv's are missing or duplicated
 #' @param expected vector of expected video numbers
 #' @param file_list list of cvision csv files. If left blank will use all csvs in working directory
 #' @export

@@ -2,7 +2,7 @@
 % Please edit documentation in R/check_cvision.R
 \name{check_cvision}
 \alias{check_cvision}
-\title{Check if any C-Vision csv's are missing}
+\title{Check if any C-Vision csv's are missing or duplicated}
 \usage{
 check_cvision(expected, file_list = list.files(pattern = ".csv$"))
 }
@@ -12,5 +12,5 @@ check_cvision(expected, file_list = list.files(pattern = ".csv$"))
 \item{file_list}{list of cvision csv files. If left blank will use all csvs in working directory}
 }
 \description{
-Check if any C-Vision csv's are missing
+Check if any C-Vision csv's are missing or duplicated
 }

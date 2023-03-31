@@ -3,7 +3,7 @@
 #' Calculates frame-rate of Blackfly Camera.
 #'
 #' @param cam_timestamp vector of camera timestamps (must be same length as cam_filepath)
-#' @param cam_filepath vector of filepaths from balckfly camera (must be same length as cam_timestamp)
+#' @param cam_filepath vector of filepaths from blackfly camera (must be same length as cam_timestamp)
 #' @param u_second vector of microseconds (Alternatively microseconds can already be in the timestamp) (must be same length as cam_filepath)
 #' @param check logical indicating whether or not to check if camera was reset
 #' @importFrom lubridate dmicroseconds
