@@ -80,10 +80,10 @@ generate_cruise_files<- function(output_dir,EK_dir,CBASS_dir, Ship_dir, winch_di
       }
       alt_pos<- alt_pos2
       }
-      EK_pos<- mytools:::NorthstarGGA2EK(alt_pos[1])
+      EK_pos<- NorthstarGGA2EK(alt_pos[1])
       if(length(alt_pos)>1){
         for (s in 2:length(alt_pos)){
-          EK_pos<- bind_rows(EK_pos, mytools:::NorthstarGGA2EK(alt_pos[s]))
+          EK_pos<- bind_rows(EK_pos, NorthstarGGA2EK(alt_pos[s]))
         }
       }
     EK_pos$GPS_date=as.character(EK_pos$GPS_date)} #Format alt_pos source like EK
