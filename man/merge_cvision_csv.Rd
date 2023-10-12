@@ -6,17 +6,29 @@
 \usage{
 merge_cvision_csv(
   file_list = list.files(pattern = "\\\\.csv$"),
-  frames_per_sec,
-  vid_length
+  frames_per_sec = NA,
+  vid_length = 1,
+  strict = FALSE,
+  filename,
+  append
 )
 }
 \arguments{
 \item{file_list}{list of cvision files to be merged}
 
-\item{frames_per_sec}{frames per second}
+\item{frames_per_sec}{frames per second (default is NA)}
 
-\item{vid_length}{Length of video in minutes}
+\item{vid_length}{Length of video in minutes (default is 1 min)}
+
+\item{strict}{logical indicating whether the procedure should stop if a csv cannot be processed (default is FALSE which instead displays a warning).}
+
+\item{filename}{Optional name of csv file to write result to (Default is NULL)}
+
+\item{append}{If FALSE, will overwrite existing file. If TRUE, will append to existing file. In both cases, if the file does not exist a new file is created (Default is FALSE).}
 }
 \description{
-Merges all C-Vision CSV's into 1 CSV using a list of files or will merge all csv's in current working directory. NOTE: Use total frame for blackfly/AVT and Total Time for axis when trying to match to timestamp or position
+Merges all C-Vision CSV's into 1 CSV using a list of files or will merge all csv's in current working directory.
+}
+\details{
+NOTE: Use total frame for blackfly/AVT and Total Time for axis when trying to match to timestamp or position (advice is outdated but holds for some older cruises b/c of drift in blackfly imagery relative to axis/actual time)
 }
