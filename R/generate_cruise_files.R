@@ -34,7 +34,7 @@
 #' @export
 
 generate_cruise_files<- function(output_dir,EK_dir,CBASS_dir, Ship_dir, winch_dir, altimeter_file= "altimeter_readings.tsv", ctd_file= "ctd_readings.tsv",compass_file= "compass_readings.tsv", zeroed = "water", GPS_Source = "CoG", CBASS_transect_name=NULL, CBASS_transect_subdir="", alt_pos=""){
-  if(!dir.exists(output_dir)){dir.create(output_dir)} #Create output directory if it doesn't exist
+  if(!dir.exists(output_dir)){dir.create(output_dir, recursive = TRUE)} #Create output directory if it doesn't exist
   #Set up messages file (DO NOT EDIT THIS)
   warn_behavior<- getOption("warn")
   options(warn = 1) #Set warnings behavior
