@@ -1,6 +1,6 @@
 Package: CbassTools
 Title: Functions for C-BASS Data
-Version: 0.3
+Version: 0.3.1
 Authors@R: 
   person(given = "Alexander",
            family = "Ilich",
