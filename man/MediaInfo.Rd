@@ -9,7 +9,7 @@ MediaInfo(filepath, MediaInfo_Path)
 \arguments{
 \item{filepath}{file path of media file}
 
-\item{MediaInfo_Path}{Path to MediaInfo program}
+\item{MediaInfo_Path}{Path to MediaInfo.exe}
 }
 \description{
 Uses program MediaInfo to extract details from media (e.g. video or image files).

@@ -2,7 +2,7 @@
 #'
 #' Uses program MediaInfo to extract details from media (e.g. video or image files).
 #' @param filepath file path of media file
-#' @param MediaInfo_Path Path to MediaInfo program
+#' @param MediaInfo_Path Path to MediaInfo.exe
 #' @importFrom stringr str_replace_all
 #' @details
 #' You can download MediaInfo from https://mediaarea.net/en/MediaInfo
