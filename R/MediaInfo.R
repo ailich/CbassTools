@@ -11,7 +11,7 @@
 
 MediaInfo<- function(filepath, MediaInfo_Path){
   filepath<-  str_replace_all(string = filepath, pattern = "/{2,}", replacement = "/") #Remove multiple "/" that are in a row for command line interface in system call
-  media_info <- system(paste(shQuote(Media_Info_Path), shQuote(filepath)), intern = TRUE)
+  media_info <- system(paste(shQuote(MediaInfo_Path), shQuote(filepath)), intern = TRUE)
   return(media_info)
 }
 
