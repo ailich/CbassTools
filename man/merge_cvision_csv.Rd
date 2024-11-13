@@ -9,8 +9,8 @@ merge_cvision_csv(
   frames_per_sec = NA,
   vid_length = 1,
   strict = FALSE,
-  filename,
-  append
+  filename = NULL,
+  append = FALSE
 )
 }
 \arguments{

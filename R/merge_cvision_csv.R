@@ -14,7 +14,7 @@
 #' @details
 #' NOTE: Use total frame for blackfly/AVT and Total Time for axis when trying to match to timestamp or position (advice is outdated but holds for some older cruises b/c of drift in blackfly imagery relative to axis/actual time)
 
-merge_cvision_csv<- function(file_list=list.files(pattern = "\\.csv$"), frames_per_sec=NA, vid_length=1, strict=FALSE, filename, append) {
+merge_cvision_csv<- function(file_list=list.files(pattern = "\\.csv$"), frames_per_sec=NA, vid_length=1, strict=FALSE, filename=NULL, append=FALSE) {
   fish<- tibble("Trip_ID" = integer(), "Tow_Number"= integer(), "Reviewer"=character(), "Tow_Type"=character(), "Fish_Number"=integer(), "Fish_Type"=character(), "Species"=character(), "Frame"=integer(), "Time_In_Video"=numeric(), file_name=character()) #Initialize accumulator
 
   NULL_df<- fish
