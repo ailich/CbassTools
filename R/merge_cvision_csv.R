@@ -32,8 +32,9 @@ merge_cvision_csv<- function(file_list=list.files(pattern = "\\.csv$"), frames_p
     return(NULL_df)
   }
   for (i in 1:length(file_list)){
-    col_names<- c(names(suppressWarnings(suppressMessages(read_csv(file_list[i], n_max=0)))), "Count_Label")
+    col_names<- names(suppressWarnings(suppressMessages(read_csv(file_list[i], n_max=0))))
     col_names<- col_names[col_names!="...10"] #Some files accidentally have an extra comma to fix ragged rows leading to this
+    if (!("Count_Label" %in% col_names)){col_names<- c(col_names, "Count_Label")} # Append Count_Label to end col_names if not there
     if(!identical(col_names, c("Trip_ID", "Tow_Number", "Reviewer", "Tow_Type", "Fish_Number", "Fish_Type", "Species", "Frame", "Time_In_Video", "Count_Label"))){
       n_files<- n_files-1 #reduce length by one
       if(strict){
